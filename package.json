@@ -1,0 +1,31 @@
+{
+  "version": "0.0.0",
+  "name": "maybe.ts",
+  "description": "Library for representing values that may or may not exist",
+  "keywords": [
+    "Maybe.ts",
+    "typed",
+    "typescript"
+  ],
+  "main": "Maybe",
+  "typings": "Maybe.d.ts",
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "repository": "https://github.com/Gozala/Maybe.ts",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@types/tape": "^4.2.30",
+    "tape": "^4.6.3",
+    "typescript": "^2.3.2",
+    "ts-node": "^3.0.4",
+    "typedoc": "^0.7.1"
+  },
+  "scripts": {
+    "test": "npm run test:tape",
+    "test:tape": "ts-node node_modules/tape/bin/tape test/**/*.ts",
+    "build": "npm run build:clean && npm run build:node && npm run build:docs",
+    "prepare": "npm run build:node",
+    "build:node": "tsc --project tsconfig.json",
+    "build:docs": "typedoc --theme minimal --out ./docs --readme none",
+    "build:clean": "rm -f ./*.js && rm -f ./*.d.ts"
+  }
+}
