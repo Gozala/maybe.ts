@@ -158,4 +158,4 @@ This is just an exported `null` and you can use `null`, or `undefined` or `null|
 [downloads-image]: https://img.shields.io/npm/dm/maybe.ts.svg
 [downloads-url]: https://npmjs.org/package/maybe.ts
 [docs-image]:https://img.shields.io/badge/typedoc-latest-ff69b4.svg?style=flat
-[docs-url]:https://Gozala.github.io/maybe.ts/index.html
+[docs-url]:https://Gozala.github.io/maybe.ts/
